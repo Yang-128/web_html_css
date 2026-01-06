@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 0.6fr 0.7fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1.3fr 0.4fr;
+    grid-template-areas:
+        ". h_performance h_performance ."
+        ". . . ."
+        ". . performance ."
+        ". Name film ."
+        ". Name writing ."
+        ". Name else ."
+        ". . up_shows ."
+        ". . . ."
+        ". contact contact .";
+    gap: 0;
+}
+
+.h_performance {
+    grid-area: h_performance;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.h_p{
+    cursor: pointer;
+}
+.h_writing {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_film {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_else {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_s_c {
+    margin-left: 20px;
+}

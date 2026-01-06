@@ -1,0 +1,146 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 0.6fr 0.7fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1.3fr 0.4fr;
+    grid-template-areas:
+        ". h_performance h_performance credit"
+        ". . . ."
+        ". . performance ."
+        ". Name film ."
+        ". Name writing ."
+        ". Name else ."
+        ". . up_shows ."
+        ". . . ."
+        ". contact contact .";
+    gap: 0;
+}
+
+.h_performance {
+    grid-area: h_performance;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+
+}
+
+.h_p{
+    cursor: pointer;
+}
+.h_writing {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_film {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_else {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_s_c {
+    margin-left: 20px;
+}
+
+.name_pinyin{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.chinese{
+    font-family: "Noto Serif SC", serif;
+    font-size: 45px;
+}
+
+.Name {
+    grid-area: Name;
+    justify-self: center;
+    align-self: center;
+    font-size:50px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Profession {
+    grid-area: Name;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.979);
+    font-family: "Sirivennela", sans-serif;
+    
+}
+
+.performance {
+    grid-area: performance;
+    text-align: center;
+    font-family: "Gravitas One", serif;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.film {
+    grid-area: film;
+    text-align: center;
+    font-family: "Gravitas One", serif;
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.writing {
+    grid-area: writing;
+    text-align: center;
+    font-family: "Gravitas One", serif;
+    background-color: transparent;
+    font-size:40px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.else {
+    grid-area: else;
+    text-align: center;
+    font-family: "Gravitas One", serif;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+.up_shows {
+    grid-area: up_shows;
+    text-align: center;
+    font-family: "Gravitas One", serif;
+    background-color: transparent;
+    border:none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.contact{
+    grid-area: contact;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: "Sirivennela", sans-serif;
+}
+
+.credit{
+    grid-area: credit;
+    align-self: center;
+    justify-self: center;
+    text-align: right;
+    font-size: 10px;
+    color: black;
+}

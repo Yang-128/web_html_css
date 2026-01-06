@@ -1,0 +1,119 @@
+.p_c {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.2fr 20fr;
+    grid-template-areas:
+        ". h_performance ."
+        ". content-block .";
+    gap: 0;
+}
+
+.content-block {
+    grid-area: content-block;
+    display:none;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+}
+
+.content-block.active {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 4fr 6fr 0.5fr;
+    grid-template-columns: 4fr;
+    grid-template-areas: 
+    "."
+    "title_p"
+    "video_p"
+    "content_p"
+    ".";
+}
+
+/* 可选：给当前选中的 text 一个状态 */
+.text-item {
+    cursor: pointer;
+}
+
+.text-item.active {
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+.video_t {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.content-block p {
+  white-space: pre-line;
+  line-height: 2;   /*  双倍行距 */
+}
+
+.article-image {
+    display: block;
+    margin: 20px auto; /* 居中并添加上下间距 */
+    max-width: 100%;   /* 确保图片不会超出容器宽度 */
+    height: 320px;      /* 保持图片比例 */
+}
+
+
+.h_performance {
+    grid-area: h_performance;
+    text-align: center;
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.h_p{
+    cursor: pointer;
+}
+
+.h_writing {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_film {
+    margin-left: 20px;
+      cursor: pointer;
+}
+
+.h_else {
+    margin-left: 20px;
+      cursor: pointer;
+}
+
+.h_s_c {
+    margin-left: 20px;
+      cursor: pointer;
+}
+
+.title_p{
+    grid-area: title_p;
+    justify-self: left;
+    align-self: center;
+    font-size: 25px;
+    font-family: "Noto Serif SC", serif;
+}
+
+.video_p{
+    grid-area: video_p;
+    justify-self: center;
+    align-self: center;
+}
+
+.content_p{
+    grid-area: content_p;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.performance_date{
+    grid-area: title_p;
+    font-size: 20px;
+    font-family: "Noto Serif SC", serif;
+    justify-self: left;
+    align-self: center;
+}
+

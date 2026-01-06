@@ -1,0 +1,172 @@
+.container_w {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    grid-template-rows:
+        0.6fr
+        0.5fr
+        0.5fr
+        1.2fr
+        repeat(25, 1.2fr); /*老师说每加一篇新的文章就要在这里repeat数字+1噢*/
+
+    grid-template-areas:
+        "home h_performance h_performance h_performance ."
+        ". title_w title_w title_w ."
+        ". title_w title_w title_w ."
+        ". . . . ."
+        ". date0 timeline text0 ."
+        ". date1 timeline text1 ."
+        ". date2 timeline text2 ."
+        ". date3 timeline text3 ."
+        ". date4 timeline text4 ."
+        ". date5 timeline text5 ."
+        ". date6 timeline text6 ."
+        ". date7 timeline text7 ."
+        ". date17 timeline text17 ."
+        ". date18 timeline text18 ."
+        ". date19 timeline text19 ."
+        ". date20 timeline text20 ."
+        ". date21 timeline text21 ."
+        ". date22 timeline text22 ."
+        ". date23 timeline text23 ."
+        ". date24 timeline text24 ."
+        ". date8 timeline text8 ."
+        ". date9 timeline text9 ."
+        ". date10 timeline text10 ."
+        ". date11 timeline text11 ."
+        ". date12 timeline text12 ."
+        ". date13 timeline text13 ."
+        ". date14 timeline text14 ."
+        ". date15 timeline text15 ."
+        ". date16 timeline text16 .";
+}
+
+.title_w {
+    grid-area: title_w;
+    font-family: "Gravitas One", serif;
+    justify-self: center;
+    align-self: center;
+    font-size: 45px;
+}
+
+
+.h_performance {
+    grid-area: h_performance;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home{
+    cursor: pointer;
+    font-size: 10;
+    font-family: "Gravitas One", serif;
+    grid-area: home;
+    justify-self: center;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.654);
+}
+
+.h_p{
+    cursor: pointer;
+}
+
+.h_writing {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_film {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_else {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_s_c {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.date {
+    grid-column: 2;
+    align-self: center;
+    justify-self: right;
+    font-size: 20px;
+    font-family: "Noto Serif SC", serif;
+}
+
+.text {
+    grid-column: 4;
+    font-size: 19px;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+}
+
+.date0  { grid-area: date0; }
+.date1  { grid-area: date1; }
+.date2  { grid-area: date2; }
+.date3  { grid-area: date3; }
+.date4  { grid-area: date4; }
+.date5  { grid-area: date5; }
+.date6  { grid-area: date6; }
+.date7  { grid-area: date7; }
+.date17 { grid-area: date17;}
+.date18 { grid-area: date18;}
+.date19 { grid-area: date19;}
+.date20 { grid-area: date20;}
+.date21 { grid-area: date21;}
+.date22 { grid-area: date22;}
+.date23 { grid-area: date23;}
+.date24 { grid-area: date24;}
+.date8  { grid-area: date8; }
+.date9  { grid-area: date9; }
+.date10 { grid-area: date10; }
+.date11 { grid-area: date11; }
+.date12 { grid-area: date12; }
+.date13 { grid-area: date13; }
+.date14 { grid-area: date14; }
+.date15 { grid-area: date15; }
+.date16 { grid-area: date16; }
+
+.text0  { grid-area: text0; }
+.text1  { grid-area: text1; }
+.text2  { grid-area: text2; }
+.text3  { grid-area: text3; }
+.text4  { grid-area: text4; }
+.text5  { grid-area: text5; }
+.text6  { grid-area: text6; }
+.text7  { grid-area: text7; }
+.text17 { grid-area: text17;}
+.text18 { grid-area: text18;}
+.text19 { grid-area: text19;}
+.text20 { grid-area: text20;}
+.text21 { grid-area: text21;}
+.text22 { grid-area: text22;}
+.text23 { grid-area: text23;}
+.text24 { grid-area: text24;}
+.text8  { grid-area: text8; }
+.text9  { grid-area: text9; }
+.text10 { grid-area: text10; }
+.text11 { grid-area: text11; }
+.text12 { grid-area: text12; }
+.text13 { grid-area: text13; }
+.text14 { grid-area: text14; }
+.text15 { grid-area: text15; }
+.text16 { grid-area: text16; }
+
+body {
+  background: linear-gradient(
+    to top,
+    #c3e5ff 0%,     /* strongest blue bottom */
+    #c3e5ff 14%,    /* much smaller blue area */
+    #fff7ef 100%    /* soft warm white for the rest */
+  );
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;   /* removes underline */
+  color: black;            /* sets link text to black */
+}

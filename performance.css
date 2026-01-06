@@ -1,0 +1,172 @@
+.container_p {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 0.6fr 0.5fr 0.5fr 1.3fr 4fr 4fr 4fr 4fr 4fr 0.5fr;
+    position:relative;
+    grid-template-areas:
+        "home h_performance h_performance h_performance h_performance ."
+        ". title_p title_p title_p title_p ."
+        ". title_p title_p title_p title_p ."
+        ". . . . . . "
+        ". . title0 shutu_v shutu_v ."
+        ". yuci_v yuci_v title1 . ."
+        ". . title2 WDSTF_v WDSTF_v ."
+        ". zhuangji_v zhuangji_v title3 . ."
+        ". . title4 dasheng_v dasheng_v ."
+        ". . . . . .";
+    gap:0;
+}
+
+.title_p{
+    grid-area: title_p;
+    font-family: "Gravitas One", serif;
+    justify-self: center;
+    align-self: center;
+    font-size: 45px;
+}
+
+.home{
+    cursor: pointer;
+    font-size: 10;
+    font-family: "Gravitas One", serif;
+    grid-area: home;
+    justify-self: center;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.654);
+}
+
+.top_bg{
+    grid-column: 1 / -1;   /* span all columns */
+    grid-row: 1 / 5;       /* row 1 through row 4 */
+    background: linear-gradient(to bottom, #fff2b0, #ffffff);
+    z-index: 0;
+}
+
+.container_p > *:not(.top-bg){
+    position: relative;
+    z-index: 1;
+}
+
+.h_performance {
+    grid-area: h_performance;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: bold;
+
+}
+
+.h_p{
+    cursor: pointer;
+}
+
+.h_writing {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_film {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_else {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_s_c {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.title0{
+    grid-area: title0;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    text-align: center;
+}
+
+
+.shutu_v{
+    grid-area: shutu_v;
+    justify-self: left;
+    align-self: left;
+}
+
+.yuci_v{
+    grid-area: yuci_v;
+    justify-self: right;
+    align-self: right;
+}
+
+.title1{
+    grid-area: title1;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    text-align: center;
+}
+
+
+.WDSTF_v{
+    grid-area: WDSTF_v;
+    justify-self: left;
+    align-self: left;
+}
+
+.title2{
+    grid-area: title2;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    text-align: center;
+}
+
+.zhuangji_v{
+    grid-area: zhuangji_v;
+    justify-self: right;
+    align-self: right;
+}
+
+.title3{
+    grid-area: title3;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    text-align: center;
+}
+
+.dasheng_v{
+    grid-area: dasheng_v;
+    justify-self: left;
+    align-self: left;
+}
+
+.title4{
+    grid-area: title4;
+    font-size: 20px;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    text-align: center;
+}
+
+a {
+  text-decoration: none;   /* removes underline */
+  color: black;            /* sets link text to black */
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}

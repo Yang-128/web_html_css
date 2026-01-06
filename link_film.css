@@ -1,0 +1,72 @@
+.container_x {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 1fr;
+    grid-template-areas:
+        ". h_performance ."
+        ". title_x ."
+        ". video_x ."
+        ". content_x .";
+    gap: 0;
+}
+
+.h_performance {
+    grid-area: h_performance;
+    text-align: center;
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.h_p{
+    cursor: pointer;
+}
+
+.h_writing {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_film {
+    margin-left: 20px;
+      cursor: pointer;
+}
+
+.h_else {
+    margin-left: 20px;
+      cursor: pointer;
+}
+
+.h_s_c {
+    margin-left: 20px;
+      cursor: pointer;
+}
+
+.title_x{
+    grid-area: title_x;
+    justify-self: left;
+    align-self: center;
+    font-size: 25px;
+    font-family: "Noto Serif SC", serif;
+}
+
+.video_x{
+    grid-area: video_x;
+    justify-self: center;
+    align-self: center;
+}
+
+.content_x{
+    grid-area: content_x;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.film_date{
+     grid-area: title_x;
+    font-size: 20px;
+    font-family: "Noto Serif SC", serif;
+        justify-self: left;
+    align-self: center;
+}

@@ -1,0 +1,55 @@
+.contents{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows:
+        auto;
+
+    grid-template-areas:
+        ". content-block .";
+}
+
+.content-block {
+    grid-area: content-block;
+    display: none;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+}
+
+.content-block.active {
+    display: block;
+    justify-self: center;
+    align-self: center;
+}
+
+/* 可选：给当前选中的 text 一个状态 */
+.text-item {
+    cursor: pointer;
+}
+
+.text-item.active {
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+}
+.video_t {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.content-block p {
+  white-space: pre-line;
+  line-height: 2;   /*  双倍行距 */
+}
+
+.article-image {
+    display: block;
+    margin: 20px auto; /* 居中并添加上下间距 */
+    max-width: 100%;   /* 确保图片不会超出容器宽度 */
+    height: 320px;      /* 保持图片比例 */
+}
+
+iframe {
+    display: block;
+    border-style:none;
+}

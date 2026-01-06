@@ -1,0 +1,136 @@
+.container_f {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 0.6fr 0.5fr 0.5fr 1.3fr 1fr 4fr 1.2fr 1fr 4fr 1fr;
+    grid-template-areas:
+        "home h_performance h_performance ."
+        ". title_f title_f ."
+        ". title_f title_f ."
+        ". . . . "
+        ". xin astep ."
+        ". xin_pic astep_pic ."
+        ". . . ."
+        ". aquarium camas ."
+        ". aquarium_pic camas_pic ."
+        ". . . . ";
+    gap:0;
+}
+
+.title_f{
+    grid-area: title_f;
+    font-family: "Gravitas One", serif;
+    justify-self: center;
+    align-self: center;
+    font-size: 45px;
+}
+
+.home{
+    cursor: pointer;
+    font-size: 10;
+    font-family: "Gravitas One", serif;
+    grid-area: home;
+    justify-self: center;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.654);
+}
+
+.h_performance {
+    grid-area: h_performance;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.h_p{
+    cursor: pointer;
+}
+
+.h_writing {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_film {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_else {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.h_s_c {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.xin{
+    grid-area: xin;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-family: "Noto Serif SC", serif;
+    font-size: 20px;
+}
+
+.xin_pic{
+    grid-area: xin_pic;
+    justify-self: center;
+    align-self: center;
+}
+
+.astep{
+    grid-area: astep;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    font-size: 20px;
+}
+
+.astep_pic{
+    grid-area: astep_pic;
+    justify-self: center;
+    align-self: center;
+}
+
+.aquarium{
+    grid-area: aquarium;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    font-size: 20px;
+}
+
+.aquarium_pic{
+    grid-area: aquarium_pic;
+    justify-self: center;
+    align-self: center;
+}
+
+.camas{
+    grid-area: camas;
+    justify-self: center;
+    align-self: center;
+    font-family: "Noto Serif SC", serif;
+    font-size: 20px;
+}
+
+.camas_pic{
+    grid-area: camas_pic;
+    justify-self: center;
+    align-self: center;
+}
+
+
+body {
+  background: radial-gradient(
+    circle at center,
+    #fff2b0 0%,      /* yellow center */
+    #fff2b0 18%,     /* solid yellow core */
+    #fffaf0 45%,     /* soft warm fade */
+    #ffffff 80%,     /* close to edge = white */
+    #ffffff 100%     /* edge fully white */
+  );
+  background-attachment: fixed;
+}
+
