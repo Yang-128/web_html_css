@@ -13,6 +13,7 @@
         ". . . ."
         ". contact contact .";
     gap: 0;
+    height: 100vh;
 }
 
 .h_performance {
@@ -22,6 +23,7 @@
     font-family: "Spectral", serif;
   font-weight: 200;
   font-style: normal;
+  height: 20vh;
 
 }
 
@@ -64,6 +66,7 @@
     font-size:50px;
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Times New Roman', Times, serif;
+    min-width: 33vh;
 }
 
 .Profession {

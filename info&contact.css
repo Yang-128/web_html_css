@@ -1,4 +1,5 @@
 .container {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr 4fr 1fr;
     grid-template-rows: 0.6fr 0.7fr 0.5fr 0.5fr;
@@ -38,21 +39,31 @@
 }
 
 .picture {
-  grid-area: picture;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
+    grid-area: picture;
+    background-image: url("background_a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ". about . ."
+    ". contact . .";
 }
+
 
 .about {
     grid-area: about;
-    text-align: center;
-    margin-top: 20px;
+    align-self: center;
+    justify-self: center;
+    color:aliceblue;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .contact {
     grid-area: contact;
     text-align: center;
-    margin-top: 20px;
+    color:aliceblue;
 }
